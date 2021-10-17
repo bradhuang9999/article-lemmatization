@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <!-- Bootstrap CSS -->
+    <link href="libs/bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Article Lemmatizer</title>
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/icons/icon_152.png">
+    <meta name="theme-color" content="white"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Vocabulary List">
+    <meta name="msapplication-TileImage" content="images/icons/icon_144.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+  </head>
+  <body>   
+    File
+    <input type="file" id='inputFile'>
+    <button id='btnExtract'>Extract</button>
+
+    <div id='divToastContainer' class="position-fixed bottom-0 end-0 p-3" style="z-index: 5"></div>
+    <div id='divErrorInfo'></div>
+
+    <script src="libs/jquery/3.6.0/jquery-3.6.0.min.js"></script>
+    <script src="libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+    <script src="libs/handlebars/4.7.7/handlebars.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
+    <script src="libs/epub.js/0.3.88/epub.min.js"></script>
+    <script src="libs/sheetjs/0.17.1/xlsx.mini.min.js"></script>
+
+    <script src='js/common.js'></script>
+    <script type="module" src='js/index.js'></script>
+    
+  </body>
+</html>
